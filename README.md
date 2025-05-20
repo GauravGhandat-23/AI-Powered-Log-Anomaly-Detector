@@ -47,7 +47,6 @@ AI-Powered Log Anomaly Detector/
 ├── utils.py
 ├── prompts.py
 ├── detect_anomalies.py
-├── .env
 ├── README.md
 └── test_auth.log  # Sample file for testing
 ```
