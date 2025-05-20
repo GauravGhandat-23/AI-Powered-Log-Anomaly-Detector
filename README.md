@@ -38,6 +38,77 @@ GROQ_API_KEY=your_groq_api_key_here
 ```
 
 ---
+## ✅ Recommended Fix: Use a **Virtual Environment**
+
+### Step-by-step guide to safely install your project dependencies:
+
+#### 1. **Create a Virtual Environment**
+
+```bash
+python3 -m venv venv
+```
+
+This creates a folder called `venv` containing an isolated Python environment.
+
+#### 2. **Activate the Virtual Environment**
+
+```bash
+source venv/bin/activate
+```
+
+Your terminal prompt will change to show `(venv)` indicating the virtual environment is active.
+
+#### 3. **Install Requirements in Isolation**
+
+Now run:
+
+```bash
+pip install -r requirements.txt
+```
+
+✅ This time it will work, because `pip` is installing into your local virtual environment, not the system-wide one.
+
+---
+
+## 🧪 Test Your App
+
+With the virtual environment still active, run your script:
+
+```bash
+python detect_anomalies.py --log test_auth.log
+```
+
+---
+
+## 📦 Deactivate When Done
+
+To exit the virtual environment:
+
+```bash
+deactivate
+```
+
+---
+
+## 🛠️ Optional: Install Required Tools
+
+If you get an error about missing `venv`, install it first:
+
+```bash
+sudo apt install python3-venv
+```
+
+---
+
+## 🧾 Summary
+
+| Action | Command |
+|-------|---------|
+| Create virtual env | `python3 -m venv venv` |
+| Activate it | `source venv/bin/activate` |
+| Install packages | `pip install -r requirements.txt` |
+| Run script | `python detect_anomalies.py --log test_auth.log` |
+| Deactivate | `deactivate` |
 
 ## 📁 Project Structure
 
@@ -132,7 +203,16 @@ Have questions or suggestions? Feel free to reach out:
 - 📧 [Email](mailto:gauravghandat12@gmail.com)
 - 💼 [LinkedIn](www.linkedin.com/in/gaurav-ghandat-68a5a22b4)
 
----
-## 📬 Support
 
-If you'd like a downloadable version of this project or help adapting it to your environment, let me know!
+
+
+
+
+
+
+
+
+
+
+
+
